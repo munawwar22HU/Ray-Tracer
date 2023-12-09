@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS 440 - Team Ray</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="nav-header">
+        <h1> <a href="./index.html" id = "logo"> R a y</a></h1>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="concept slide">
+            <div class="hero-img">
+                <img src="./imgs/hi.png">
+                <div class="reveal-img"></div>
+            </div>
+            <div class="hero-desc">
+                <div class="title">
+                    <h2>Our Concept</h2>
+                </div>
+                <p>We created a scene with 2019081 polygons in which a room is set up. It contains what you find in an average room but with a plant on the chair, rather than a person </p>
+                <a href="https://github.com/CS-440-Fall-2021/p2-p2-ray" target="_blank" class="explore">Our Code</a>
+                <div class="reveal-text"></div>
+            </div>
+        </section>
+
+        <section class="scene slide">
+            <div class="hero-img">
+                <img src="./imgs/hi.png">
+                <div class="reveal-img"></div>
+            </div>
+            <div class="hero-desc">
+                <div class="title">
+                    <h2>The Scene</h2>
+                </div>
+                <p>The scene is about a dark interior where the only object close to a living thing is a small plant. Sadly, he is alone too...</p>
+                <a href="./scene/index.html" class="explore">Explore</a>
+                <div class="reveal-text"></div>
+            </div>
+        </section>
+
+        <section class="acceleration slide">
+            <div class="hero-img">
+                <img src="./imgs/acc.png">
+                <div class="reveal-img"></div>
+            </div>
+            <div class="hero-desc">
+                <div class="title">
+                    <h2>Acceleration Structures</h2>
+                </div>
+                <p>We Used BVH structure which is also known as BOUNDING VOLUME HIERARCHY</p>
+                <a href="acceleration/index.html" class="explore">Explore</a>
+                <div class="reveal-text"></div>
+            </div>
+        </section>
+
+        <section class="code-features slide">
+            <div class="hero-img">
+                <img src="./imgs/square.jpg">
+                <div class="reveal-img"></div>
+            </div>
+            <div class="hero-desc">
+                <div class="title">
+                    <h2>Code Features</h2>
+                </div>
+                <p>The features of our code include diffrent cameras, lights , geometry primitives and so on. To find out more click on Explore!</p>
+                <a href="./code-features/index.html" class="explore">Explore</a>
+                <div class="reveal-text"></div>
+            </div>
+        </section>
+
+        <section class="image-features slide">
+            <div class="hero-img">
+                <img src="./Results/Materials/Cosine.png">
+                <div class="reveal-img"></div>
+            </div>
+            <div class="hero-desc">
+                <div class="title">
+                    <h2>Image Features</h2>
+                </div>
+                <p>The features of our Images include shadows and anti aliased images. To find out more click on Explore !</p>
+                <a href="./img-features/index.html" class="explore">Explore</a>
+                <div  class="reveal-text"></div>
+            </div>
+        </section>
+
+        <section class="build slide ack">
+            <div class="hero-desc ">
+                <div class="title s-ack">
+                    <h2>Build</h2>
+                    <p> buildChapter14.cpp: Render the Chapter 14 Scene.</p>
+                    <p> buildHelloWorld.cpp: Render the Hello World Scene.</p>
+                    <p> buildMvp.cpp: Render the MVP scene</p>
+                    <p> buildLights.cpp: Render scene with diffrent types of lights.</p>
+                    <p> buildMaterials.cpp : Render scene with diffrent types of materials</p>
+                    <p> buildPLY.cpp: Render our scene.</p>
+                    <p> buildShadows.cpp: Render shadowss by using diffrent lights</p>
+                    <p> buildSpheres.cpp: Render random spheres in a grid</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="team slide">
+            <div class="hero-img">
+                <img src="./imgs/ray-team.jpg">
+                <div class="reveal-img"></div>
+            </div>
+            <div class="hero-desc">
+                <div class="title">
+                    <h2>Meet Ray</h2>
+                </div>
+                <p>Click on Explore to meet the awesome members of Team Ray.</p>
+                <a href="./team/index.html" class="explore">Explore</a>
+                <div class="reveal-text"></div>
+            </div>
+        </section>
+
+        <section class="slide ack">
+            <div class="hero-desc">
+                <div class="title s-ack">
+                    <h2>
+                        Acknowledgments
+                    </h2>
+                    <p> Dr. Waqar for teaching this wonderful course.</p>
+                    <p> The book Ray Tracing from the Ground Up for Code Snippets</p>
+                    <p> <a href="https://github.com/VertexC/glass-chess">Implementation of BVH in C++</a></p>
+                    <p><a href="https://github.com/nmwsharp/happly">C++ Library for parsing PLY files</a></p>
+                    <p>PLY files have been taken from CGTrader</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide ack">
+            <div class="hero-desc">
+                <div class="title s-ack">
+                    <h2>
+                        Compilation Command.
+                    </h2>
+                    <p>The following is the command to compile the file. </br>g++ raytracer.cpp ./utilities/*.cpp ./world/*.cpp ./cameras/*.cpp ./geometry/*.cpp ./materials/*.cpp ./samplers/*.cpp ./tracers/*.cpp ./lights/*.cpp ./BRDF/*.cpp ./acceleration/*.cpp ./build/buildHelloWorld.cpp -fopenmp</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <nav class="nav-bar">
+        <ul class="nav-links">
+           <a href="./scene/index.html"><h3>Scene</h3></a> 
+           <a href="./acceleration/index.html"><h3>Acceleration Structures</h3></a> 
+           <a href="./code-features/index.html"><h3>Code Features</h3></a> 
+           <a href="./img-features/index.html"><h3>Image Features</h3></a> 
+           <a href="./team/index.html"><h3>The Team</h3></a> 
+        </ul>
+    </nav>
+
+    
+    <div class="swipe swipe1"></div>
+    <div class="swipe swipe2"></div>
+    <div class="swipe swipe3"></div>
+
+
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js" integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js" integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js" integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+</html>

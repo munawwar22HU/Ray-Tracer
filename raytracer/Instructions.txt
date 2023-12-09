@@ -1,0 +1,1 @@
+g++ raytracer.cpp ./utilities/*.cpp ./world/*.cpp ./cameras/*.cpp ./geometry/*.cpp ./materials/*.cpp ./samplers/*.cpp ./tracers/*.cpp ./lights/*.cpp ./BRDF/*.cpp ./acceleration/*.cpp ./build/builSpheres.cpp -fopenmp

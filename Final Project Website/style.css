@@ -1,0 +1,477 @@
+*{
+    margin:0; padding:0; box-sizing: border-box;
+}
+
+body{
+    background: #17181a;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x:  hidden;
+    position: relative;
+}
+
+#logo{
+    color: white;
+    font-family: 'Abril Fatface';
+}
+
+.nav-header{
+    min-height: 10vh;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    width: 90%;
+    margin: auto;
+    padding: 2rem 0rem;
+    z-index: 2;
+    position: relative; 
+    
+}
+
+.line1, .line2{
+    width: 3rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background: white;
+    pointer-events: none;
+}
+
+.slide{
+    min-height: 100vh;
+    margin: 0 auto 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background: #17181a;
+
+}
+
+.hero-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    flex-basis: 25rem;
+    padding-left: 5rem;
+    position: relative;
+}
+
+.hero-img{
+    position: relative;
+    flex: 1;
+    flex-basis: 25rem;
+    overflow: hidden;
+}
+
+.hero-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-desc h2{
+    font-family: "Abril Fatface";
+    font-size: 5rem;
+}
+
+.hero-desc p{
+    padding: 3rem 0rem;
+    font-size: 1.5rem;
+    color: rgb(233, 233, 233);
+    text-align: center;
+}
+
+.explore{
+    padding: 1rem 2rem;
+    background: none;
+    border: none;
+    color: white;
+    border: 1px solid white;
+    font-size: 1rem;
+    text-decoration: none;
+    align-self: flex-start;
+    cursor:pointer;
+
+}
+
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    opacity: 1;
+    clip-path: circle(50px at 100% -10%);
+    -webkit-clip-path: circle(50px at 100% -10%);
+}
+
+.burger{
+    cursor: pointer;  
+}
+
+.nav-links {
+    font-size: 2rem;
+    flex-basis: 20rem;
+}
+
+.nav-links a{
+    text-decoration: none;
+}
+
+.nav-links h3{
+    text-decoration: none;
+    color: black;
+    padding: 2rem 0rem;
+}
+
+.reveal-img, .reveal-text{
+    position: absolute;
+    width: 100%;
+    height: 150%;
+    background: #17181a;
+    left: 0; top: -15%;
+}
+
+.scrollmagic-pin-spacer{
+    position: static !important;
+}
+
+body.hide{
+    overflow: hidden;
+}
+
+.team-header {
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 5rem;
+    color: rgb(53, 168, 105);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.team-main{
+    margin: 0;
+	min-height: 80vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container{
+    /* margin-top: 0.5rem; */
+	width: 100%;
+	max-width: 1200px;
+	display: flex;
+	/* flex-wrap: wrap; */
+	/* justify-content: space-around; */
+    justify-content: center;
+    align-items: center;
+}
+
+.column{
+	flex: 0 0 35%;
+}  
+
+.card{
+	border:1px solid;
+	min-height: 100%;
+	position: relative;
+	background:rgb(255, 255, 255);
+	transition: all 0.3s ease-out;
+}
+.card .desciption-wrap{
+	padding:105px 30px;
+	position: relative;
+	overflow:hidden;
+}
+.card .description{
+	color: black;
+	text-align: center;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+	font-size: 20px;
+	line-height: 1.4;
+	transition: all 0.5s ease-out;
+	overflow-x: auto;
+	transform:translateY(100%);
+	opacity: 0;
+}
+.card .description > *{
+	width: 100%;
+}
+.card .description h3{
+	margin: 0;
+	font-size: 26px;
+}
+.card .description h4{
+	margin: 0;
+}
+.card .description ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.card .description ul li{
+	display: inline-block;
+	width: 40px;
+	margin: 0 10px;
+	transition: all 0.3s ease-out;
+	transform: perspective(1000px)
+	rotateX(0deg);
+}
+.card .description ul li:hover{
+	transform: perspective(1000px)
+	rotateX(30deg);
+	transform-style: preserve-3d;
+}
+.card .description ul li img{
+	max-width: 100%;
+}
+
+.pro-pic{
+	position: absolute;
+	left: 50%;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	transform: translateX(-50%);
+	background-size: cover;
+	background-position: center center;
+	transition: all 0.5s ease-out;
+}
+.card:hover .pro-pic{
+	transform:translate(-50%,-50%);
+	width: 150px;
+	height: 150px;
+	border-radius: 50%
+}
+/* .card:hover{
+	border-radius: 50px;
+} */
+.card:hover .description{
+	transform:translateY(0%);
+	opacity: 1;
+}
+
+
+
+.scene-header{
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 5rem;
+    color: rgb(53, 168, 105);
+    margin: 0.5rem;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.slide1{
+    min-height: 100vh;
+    margin: 0 auto 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background: #17181a;
+
+}
+
+.acc-container{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+
+.acc-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 1rem;
+}
+
+.acc-header h1 {
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 4.5rem;
+    color: rgb(53, 168, 105);
+    margin: 0.5rem;
+}
+
+.acc-header p{
+    font-family: sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 0.5rem;
+    color: rgb(136, 136, 136);
+}
+
+.w-acc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 2rem;
+}
+
+.w-acc h2 {
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    margin: 0.5rem;
+}
+
+.w-acc p{
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0.7rem;
+    color: rgb(136, 136, 136);
+}
+
+.sub-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sub-container h2{
+    font-family:  'Montserrat';
+    font-size: 2.2rem;
+    color: rgb(255, 255, 255);
+    margin-top: 1rem;
+}
+
+.wo-acc{
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wo-acc img{
+    max-width: 90%;
+    height: auto;
+}
+
+.acc-card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    margin: auto;
+    
+
+}
+
+.cf-cards{
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.cf-card{
+    flex: 0 0 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(14, 13, 13);
+    min-height: 12rem; width: auto;
+    margin: 0.5rem;
+    padding: 1.5rem;
+    border-radius: 2px;
+    box-shadow:  2px 4px 8px 0 rgba(51, 50, 50, 0.582);
+    
+}
+
+.cf-card h3{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.cf-card p{
+    font-size: 1.2rem;
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+
+.if-card{
+    flex: 0 0 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(14, 13, 13);
+    min-height: 12rem; width: auto;
+    margin: 0.5rem;
+    /* padding: 1rem; */
+    border-radius: 2px;
+    box-shadow:  2px 4px 8px 0 rgba(51, 50, 50, 0.582);
+    
+}
+
+.if-card img{
+    max-width: 80%;
+    height: auto;
+    margin: 1rem;
+}
+
+.if-card h3{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    color: white;
+    margin: 1rem;
+}
+
+.if-he {
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    margin: 1.5rem;
+    font-weight: bolder;
+}
+
+.if-card p{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.ack{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.s-ack{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+ 
